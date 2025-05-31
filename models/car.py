@@ -18,5 +18,6 @@ class Car(Base):
     price = Column(Float, nullable=False)
     status = Column(Enum(CarStatus), default=CarStatus.available)
     created_at = Column(DateTime, default=datetime.utcnow)
-
+    
+    # Relationships to other models
     sales = relationship("Sale", back_populates="car")

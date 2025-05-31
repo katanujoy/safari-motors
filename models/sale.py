@@ -14,6 +14,7 @@ class Sale(Base):
     price = Column(Float, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
 
+    # Relationships to other models
     car = relationship("Car", back_populates="sales")
     customer = relationship("Customer", back_populates="sales")
     employee = relationship("Employee", back_populates="sales")

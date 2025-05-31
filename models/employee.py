@@ -12,5 +12,6 @@ class Employee(Base):
     email = Column(String, nullable=False)
     phone = Column(String, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
-
+    
+    #Relationships to other models
     sales = relationship("Sale", back_populates="employee")

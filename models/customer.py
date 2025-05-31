@@ -12,4 +12,5 @@ class Customer(Base):
     phone = Column(String, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
 
+    # Relationships to other models
     sales = relationship("Sale", back_populates="customer")

@@ -11,7 +11,7 @@ from models.sale import Sale
 
 def seed_data(num_cars=10, num_customers=10, num_employees=10, num_sales=10):
     fake = Faker()
-    fake.add_provider(VehicleProvider)  # <-- Add VehicleProvider
+    fake.add_provider(VehicleProvider) 
     session = Session(bind=engine)
 
     try:
@@ -31,9 +31,9 @@ def seed_data(num_cars=10, num_customers=10, num_employees=10, num_sales=10):
         for i in range(num_cars):
             status = "sold" if i < num_sold_cars else "available"
             car = Car(
-                make=fake.vehicle_make(),           # <-- Realistic make
-                model=fake.vehicle_model(),         # <-- Realistic model
-                year=fake.random_int(min=2005, max=2024),  # More recent years
+                make=fake.vehicle_make(),         
+                model=fake.vehicle_model(),         
+                year=fake.random_int(min=2005, max=2024),  
                 price=fake.random_int(min=20000, max=150000),
                 status=status,
                 created_at=now
@@ -74,7 +74,7 @@ def seed_data(num_cars=10, num_customers=10, num_employees=10, num_sales=10):
         print(f"Created {len(employees)} employees.")
 
         # Create sales only for sold cars
-        sold_cars = session.query(Car).filter(Car.status == "sold").all()  # <-- FIXED HERE
+        sold_cars = session.query(Car).filter(Car.status == "sold").all()  
         max_sales = min(num_sales, len(sold_cars), len(customers), len(employees))
 
         if max_sales == 0:
