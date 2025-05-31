@@ -3,6 +3,14 @@
 Safari Motors is a command-line car dealership management system built with Python. It allows users to manage cars, customers, employees, and sales for a virtual car yard tailored to the Kenyan market.
 
 
+## ER Diagram link- 
+https://dbdiagram.io/d/682c4d70b9f7446da34cbcac
+
+## Video demo link
+
+
+
+
 ## Features
 
 - Add and manage cars, customers, employees, and sales
@@ -14,31 +22,36 @@ Safari Motors is a command-line car dealership management system built with Pyth
 ## Setup Instructions
 
 1. **Clone the repository:**
-
-   ```bash
    git clone https://github.com/katanujoy/safari-motors.git
    cd safari-motors
+
 2. **Install Pipenv (if not already installed):**
 
 pip install pipenv
+
 3. **Install dependencies:**
 
 pipenv install
+
 4. **Activate the virtual environment**
 
 pipenv shell
+
 5. **Run database migrations:**
 
 alembic upgrade head
+
 6. **Seed the database with sample data (optional):**
 python seed.py
+
 
 7. **Start the CLI application:**
 
 python cli.py
 
+
 ## Technologies Used
-Python 3.11+
+Python 3
 
 Pipenv – for managing the virtual environment
 
@@ -47,6 +60,8 @@ SQLAlchemy – object-relational mapper (ORM)
 Alembic – database migrations
 
 Click – command-line interface creation
+
+Faker- for fake data for the db and faker (vehicles) for authentic vehicles
 
 ## Project Structure
 
@@ -68,11 +83,11 @@ safari-motors/
 └── seed.py
 
 ## Commands
-python cli.py car list           # View all cars
-python cli.py car add            # Add a new car
-python cli.py customer add       # Register a new customer
-python cli.py sale add           # Record a new sale
-python cli.py sale list          # View all sales
+python3 cli.py car list           # View all cars
+python3 cli.py car add            # Add a new car
+python3 cli.py customer add       # Register a new customer
+python3 cli.py sale add           # Record a new sale
+python3 cli.py sale list          # View all sales
 
 ## BY:
 Joy Katanu

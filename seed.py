@@ -1,5 +1,5 @@
 from faker import Faker
-from faker_vehicle import VehicleProvider  # <-- NEW
+from faker_vehicle import VehicleProvider  
 from sqlalchemy.orm import Session
 from datetime import datetime
 from config.db import Base, engine
