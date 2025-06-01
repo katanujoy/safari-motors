@@ -7,7 +7,7 @@ Safari Motors is a command-line car dealership management system built with Pyth
 https://dbdiagram.io/d/682c4d70b9f7446da34cbcac
 
 ## Video demo link
-https://drive.google.com/file/d/1ZV5HbNjjIVWUn_5yi2VmJxpyAfV0Yknp/view?usp=sharing
+https://drive.google.com/file/d/1oSgh1ZI0pNIiMT3aIjf-os2E2vetTEUy/view?usp=sharing
 
 
 
