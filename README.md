@@ -7,7 +7,7 @@ Safari Motors is a command-line car dealership management system built with Pyth
 https://dbdiagram.io/d/682c4d70b9f7446da34cbcac
 
 ## Video demo link
-
+https://drive.google.com/file/d/1ZV5HbNjjIVWUn_5yi2VmJxpyAfV0Yknp/view?usp=sharing
 
 
 
@@ -51,7 +51,7 @@ python cli.py
 
 
 ## Technologies Used
-Python 3
+Python3
 
 Pipenv – for managing the virtual environment
 
